@@ -2,7 +2,7 @@ version: '3'
 
 services:
   kasmvnc-proxy:
-    image: swr.cn-north-4.myhuaweicloud.com/firshme/kasmvnc-proxy:neo
+    image: firshme/kasmvnc-proxy:neo
     container_name: kasmvnc-proxy
     ports:
       - "38881:38881"
