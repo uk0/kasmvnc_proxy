@@ -19,3 +19,14 @@ docker run -d --name kasmvnc-proxy -p 38881:38881 -e TARGET_HOST=10.8.0.19 -e TA
 docker build --platform=linux/amd64 -t firshme/kasmvnc-proxy:neo  .
 
 ```
+
+### 3.demo
+
+1. Use Proxy
+   ![img.png](img.png)
+
+2. Use Proxy Use `token=xxxxxx`
+
+```bash
+http://10.8.0.19:38881?token=xxxxx
+```
