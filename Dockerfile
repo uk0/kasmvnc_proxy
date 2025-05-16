@@ -53,9 +53,9 @@ ENV PROXY_PORT=38881 \
     TARGET_PORT=3000 \
     DB_HOST=postgresql \
     DB_PORT=5432 \
-    DB_NAME=aisoc \
-    DB_USER=aisoc \
-    DB_PASSWORD=Tensor@20210 \
+    DB_NAME=admin \
+    DB_USER=admin \
+    DB_PASSWORD=AAAAA@20210 \
     CONNECT_ID=""
 
 # 复制配置文件

@@ -47,9 +47,9 @@ function _M.get_db_connection()
     -- 从环境变量获取数据库连接信息
     local db_host = os.getenv("DB_HOST") or "postgresql"
     local db_port = os.getenv("DB_PORT") or "5432"
-    local db_name = os.getenv("DB_NAME") or "aisoc"
-    local db_user = os.getenv("DB_USER") or "aisoc"
-    local db_pass = os.getenv("DB_PASSWORD") or "Tensor@20210"
+    local db_name = os.getenv("DB_NAME") or "admin"
+    local db_user = os.getenv("DB_USER") or "admin"
+    local db_pass = os.getenv("DB_PASSWORD") or "AAAAAAAA@20210"
 
     -- 构建连接字符串
     local conn_str = string.format(
