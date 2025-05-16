@@ -4,20 +4,15 @@ services:
   kasmvnc-proxy:
     image: firshme/kasmvnc-proxy:neo
     container_name: kasmvnc-proxy
+    environment:
+      - PROXY_PORT=28881
     ports:
       - "38881:38881"
-    environment:
-      - TARGET_HOST=10.8.0.19
-      - TARGET_PORT=33335
-      - USERNAME=admin
-      - PASSWORD=adminaisoc
-      - PROXY_PORT=38881
-      - ACCESS_TOKEN=adminaisoc
     restart: unless-stopped
     networks:
-      - aisoc
+      - base
 
 networks:
   aisoc:
     driver: bridge
-    name: aisoc
+    name: base
